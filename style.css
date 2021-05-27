@@ -1,0 +1,108 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display';
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+    height: 400px;
+    overflow: hidden;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.5;
+
+}
+
+.sedans, .suvs, .luxury {
+    padding: 2rem;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    border: solid transparent;
+    margin-top: 40px;
+    width: 10rem;
+    height: 3.5rem;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 30px;
+    line-height: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    border: hsla(0, 0%, 100%, 0.75);
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0);
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1em;
+    text-align: center;
+}
+
+/* Mobile */
+@media only screen and (max-width: 790px) {
+    .container {
+        flex-direction: column;
+        height: unset;
+        margin: 2rem;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+
+    button {
+        margin-top: 1rem;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
